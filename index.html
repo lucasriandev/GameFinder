@@ -1,9 +1,46 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>GameFinder 🎮</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <header>
+        <h1>GAME<span>FINDER</span></h1>
+        <div class="search-box">
+          <input
+            type="text"
+            id="input-jogo"
+            placeholder="Busque um jogo (ex: GTA 4)..."
+          />
+          <button id="btn-buscar">INICIAR BUSCA</button>
+        </div>
+      </header>
+
+      <main id="card-jogo" class="escondido">
+        <div class="imagem-container">
+          <img id="img-capa" src="" alt="Capa do Jogo" />
+        </div>
+
+        <div class="info-jogo">
+          <h2 id="txt-titulo">Nome do Jogo</h2>
+
+          <div class="tags">
+            <span class="tag-lancamento"
+              >Lançamento: <strong id="txt-data">2020-01-01</strong></span
+            >
+            <span class="tag-nota"
+              >Nota: <strong id="txt-nota">0.0</strong> / 5</span
+            >
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>
