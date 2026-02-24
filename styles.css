@@ -77,7 +77,7 @@ button {
   }
 }
 
-.escondido {
+#card-jogo.escondido {
   display: none;
 }
 
