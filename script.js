@@ -26,6 +26,8 @@ async function api() {
     const dados = await resposta.json();
     if (dados.length === 0) {
       alert("Jogo não encontrado!");
+      input.value = "";
+      return;
     }
     console.log(dados);
 
@@ -37,10 +39,10 @@ async function api() {
     preco.innerText = "$ " + jogoEncontrado.cheapest;
 
     input.value = "";
+
+    cardPrincipal.classList.remove("escondido");
   } catch (error) {
     console.log(error);
-  } finally {
-    cardPrincipal.classList.remove("escondido");
   }
 }
 
