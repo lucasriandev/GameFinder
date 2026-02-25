@@ -1,10 +1,7 @@
 const input = document.querySelector("#input-jogo");
-const iniciarBusca = document.querySelector("#btn-buscar");
+const btnBusca = document.querySelector("#btn-buscat");
 
-const capaJogo = document.querySelector("#img-capa");
-const txtTitulo = document.querySelector("#txt-titulo");
-const dataLancamento = document.querySelector("#txt-data");
-const nota = document.querySelector("#txt-nota");
-
-const cardJogo = document.querySelector("#card-jogo");
-//cardJogo.style.display = 'flex'
+const cardPrincipal = document.querySelector("#card-jogo");
+const imgCapa = document.querySelector("#img-capa");
+const tituloJogo = document.querySelector("#txt-titulo");
+const preco = document.querySelector("#txt-preco");

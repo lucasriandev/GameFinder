@@ -3,25 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
-    <script src="./script.js" defer></script>
-    <title>GameFinder 🎮</title>
+    <title>DealHunter 🎯</title>
+    <link rel="stylesheet" href="styles.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Teko:wght@400;600&family=Ubuntu:wght@400;700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <div class="container">
       <header>
-        <h1>GAME<span>FINDER</span></h1>
+        <h1>DEAL<span>HUNTER</span></h1>
+        <p>Rastreador de Ofertas de Jogos</p>
+
         <div class="search-box">
           <input
             type="text"
             id="input-jogo"
-            placeholder="Busque um jogo (ex: GTA 4)..."
+            placeholder="Ex: Resident Evil, Batman..."
           />
-          <button id="btn-buscar">INICIAR BUSCA</button>
+          <button id="btn-buscar">CAÇAR OFERTA</button>
         </div>
       </header>
 
@@ -33,16 +34,14 @@
         <div class="info-jogo">
           <h2 id="txt-titulo">Nome do Jogo</h2>
 
-          <div class="tags">
-            <span class="tag-lancamento"
-              >Lançamento: <strong id="txt-data">2020-01-01</strong></span
-            >
-            <span class="tag-nota"
-              >Nota: <strong id="txt-nota">0.0</strong> / 5</span
-            >
+          <div class="preco-box">
+            <span>Melhor Preço Encontrado:</span>
+            <strong id="txt-preco">$ 0.00</strong>
           </div>
         </div>
       </main>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
